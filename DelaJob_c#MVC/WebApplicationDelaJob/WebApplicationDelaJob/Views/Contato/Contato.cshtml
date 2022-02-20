@@ -1,0 +1,63 @@
+﻿<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DelaJob - Contato</title>
+    <!-- Link CSS do Bootstrap: -->
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+</head>
+<body>
+
+    <!-- Card cadastro: -->
+    <div class="mt-5 mb-5">
+
+        <div class="text-center">
+            <h1 style="color: rgb(148, 84, 180);">Contato</h1>
+        </div>
+
+        <div class="card" style="margin: 0 auto; float: none; width: 42rem;">
+            <div class="card-body" style="background-color: rgb(227, 229, 231);">
+                <form>
+                    <div class="form-inline mb-3">
+                        <div class="form-group">
+                            <label for="Nome" class="lead">Nome:</label><br>
+                            <input type="text" name="Nome" id="Nome" class="form-control w-100" aria-describedby="textHelp" required>
+                        </div>
+                        <div class="form-group ml-auto">
+                            <label for="E-mail" class="lead">E-mail:</label><br>
+                            <input type="email" name="E-mail" id="E-mail" class="form-control w-100" aria-describedby="emailHelp" required>
+                        </div>
+                    </div>
+
+                    <div class="form-inline mb-3">
+                        <div class="form-group">
+                            <label for="Fone" class="lead">Telefone:</label><br>
+                            <input type="text" id="Fone" name="Telefone" class="form-control w-100" placeholder="Opcional">
+                        </div>
+                        <div class="form-group ml-auto">
+                            <label for="Assunto" class="lead">Assunto:</label><br>
+                            <input type="text" id="Assunto" name="Assunto" class="form-control w-100" required>
+                        </div>
+                    </div>
+
+                    <div class="form-group ml-auto m">
+                        <label for="Mensagem" class="lead">Mensagem:</label><br>
+                        <textarea id="Mensagem" name="Mensagem" rows="7" class="form-control" placeholder="Digite aqui..." required></textarea>
+                    </div>
+
+                    <div class="row">
+                        <a class="text-muted card-link ml-4" href="#"><p class="lead mt-3 mb-0" style="font-size: 14px;">Limpar Formulário</p></a>
+                        <button type="submit" class="btn text-light w-25 ml-auto mr-4" style="background-color: rgb(148, 84, 180); font-size: 25px; border-radius: 10px;">Enviar</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Links JavaScript do Bootstrap: -->
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+﻿.titulo1 {
+    color: rgb(148, 84, 180);
+}
+
+.titulo2 {
+    color: rgb(148, 84, 180);
+    font-size: 80px;
+}
+
+.img-quemsomos {
+    width: 600px;
+    height: 600px;
+}
+
+.card {
+    height: 400px;
+    width: 225px;
+}
+
+.card-img-top {
+    height: 150px;
+}

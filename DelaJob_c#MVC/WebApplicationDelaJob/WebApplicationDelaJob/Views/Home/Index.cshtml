@@ -1,0 +1,136 @@
+﻿<html>
+<head>
+    <title>DelaJob</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="~/css/index.css"/>
+    <!-- Link CSS do Bootstrap: -->
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+</head>
+
+<body>
+    <!-- Carrossel de imagens: -->
+    <div class="carousel slide" id="carouselSite" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#carouselSite" data-slide-to="0" class="active" aria-label="Slide 1"></li>
+            <li data-target="#carouselSite" data-slide-to="1" aria-label="Slide 2"></li>
+            <li data-target="#carouselSite" data-slide-to="2" aria-label="Slide 3"></li>
+        </ol>
+
+        <div class="carousel-inner">
+
+            <div class="carousel-item active">
+                <img src="~/Images/Foto1(1).jpeg" class="img-fluid d-block w-100" alt="Citação de Simone de Beauvoir" />
+            </div>
+            <div class="carousel-item">
+                <img src="~/Images/Foto4.jpeg" class="img-fluid d-block w-100" alt="Citação de Estee Lauder" />
+            </div>
+            <div class="carousel-item">
+                <img src="~/Images/Foto1(3).jpeg" class="img-fluid d-block w-100" alt="Citação de Oprah Winfrey" />
+            </div>
+
+        </div>
+        <a class="carousel-control-prev" href="#carouselSite" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+            <span class="sr-only">Voltar</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselSite" role="button" data-slide="next">
+            <span class="carousel-control-next-icon"></span>
+            <span class="sr-only">Avançar</span>
+        </a>
+    </div>
+
+    <!-- Texto e imagem (Quem Somos): -->
+    <div class="row mt-5">
+
+        <div class="col ml-5 mt-4 container-fluid">
+            <h1 class="display-3 titulo1">Quem Somos</h1><br>
+            <p class="lead textoQuemSomos"><b>DelaJob é uma organização sem fins lucrativos, cujo principal propósito é melhorar a situação de vulnerabilidade socioecômica de mulheres de baixa renda, através da valorização profissional e empregabilidade. Por meio de programas de capacitação de mão de obra feminina, o DelaJob promove o empoderamento feminino e geração de renda.</b></p>
+            <br>
+            <p class="lead textoQuemSomos"><b>O projeto social foi fundado em 2022, através de um desafio proposto pela Recode Pro, tal iniciativa nasceu a partir de um grupo de 4 pessoas que se uniram para de sair de suas bolhas sociais e ver o mundo com outra perspectiva. Desse modo, criando uma rede de fortalecimento e pertencimento focada em mulheres em desemprego.</b></p>
+        </div>
+        <div class="col ml-5 mr-auto">
+            <img src="~/Images/img-home-delajob.jpg" class="img-quemsomos img-fluid" alt="Imagem com o logo do DelaJob">
+        </div>
+
+    </div>
+
+    <!-- Texto e Cards com links: -->
+    <div class="row mt-5 mr-5">
+        <div class="mt-5 pt-5 col">
+            <h1 class="mt-3 text-center titulo2">Vídeos<br />e Palestras</h1>
+        </div>
+        <div class="mt-4 row">
+
+                <a href="https://www.youtube.com/watch?v=-O99-J-dtr0" class="text-dark col" type="button" target="_blank">
+                    <div class="card" style="background-color: lightpink;">
+                        <img class="card-img-top" src="~/Images/video1.png" alt="Imagem de apresentação de vídeo do YouTube">
+                        <div class="card-body">
+                            <h4 class="card-title text-center">Mulheres brasileiras no Mercado de Trabalho</h4>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="https://www.youtube.com/watch?v=6RSc_XYezig" class="text-dark col" type="button" target="_blank">
+                    <div class="card" style="background-color: lightpink;">
+                        <img class="card-img-top" src="~/Images/video2.png" alt="Imagem de apresentação de vídeo do YouTube">
+                        <div class="card-body">
+                            <h4 class="card-title text-center">Empoderamento das Mulheres</h4>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="https://youtu.be/CiONvw9vvI0" class="text-dark col" type="button" target="_blank">
+                    <div class="card" style="background-color: lightpink;">
+                        <img class="card-img-top" src="~/Images/video3.png" alt="Imagem de apresentação de vídeo do YouTube">
+                        <div class="card-body">
+                            <h4 class="card-title text-center">Mulheres no Mercado de Trabalho | Entrevista - Futuro do Trabalho</h4>
+                        </div>
+                    </div>
+                </a>
+
+        </div>
+    </div>
+
+    <!-- Mais textos e cards: -->
+    <div class="row mt-5 mb-lg-5 ml-5">
+        <div class="row mt-4">
+                <a class="text-dark col" type="button" asp-area="" asp-controller="Vagas" asp-action="Vagas">
+                    <div class="card" style="background-color: lightpink;">
+                        <img class="card-img-top" src="~/Images/medium-shot-woman-work.jpg" alt="Imagem alusiva à mulheres no mercado de Tecnologia">
+                        <div class="card-body">
+                            <h3 class="card-title text-center">Tecnologia</h3>
+                        </div>
+                    </div>
+                </a>
+
+                <a class="text-dark col" type="button" asp-area="" asp-controller="Vagas" asp-action="Vagas">
+                    <div class="card" style="background-color: lightpink;">
+                        <img class="card-img-top" src="~/Images/female-chef-chopping-vegetables-kitchen.jpg" alt="Imagem alusiva à mulheres no mercado de Gastronomia">
+                        <div class="card-body">
+                            <h3 class="card-title text-center">Culinária</h3>
+                        </div>
+                    </div>
+                </a>
+
+                <a class="text-dark col" type="button" asp-area="" asp-controller="Vagas" asp-action="Vagas">
+                    <div class="card" style="background-color: lightpink;">
+                        <img class="card-img-top" src="~/Images/happy-friendly-cashier-giving-credit-card-customer-after-payment-thanking-purchase-smiling-medium-shot-shopping-concept.jpg" alt="Imagem alusiva à mulheres no Comércio">
+                        <div class="card-body">
+                            <h3 class="card-title text-center">Vendas</h3>
+                        </div>
+                    </div>
+                </a>
+        </div>
+
+        <div class="mt-5 pt-2 col">
+            <h1 class="mt-5 text-center titulo2">Vagas em diversas Áreas</h1>
+        </div>
+    </div>
+
+    <!-- Links JavaScript do Bootstrap: -->
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+</body>
+</html>

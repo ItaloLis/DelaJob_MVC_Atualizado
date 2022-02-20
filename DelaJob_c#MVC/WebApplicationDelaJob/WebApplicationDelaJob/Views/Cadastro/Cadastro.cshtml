@@ -1,0 +1,50 @@
+﻿<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Link CSS do Bootstrap: -->
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <title>DelaJob - Cadastro</title>
+</head>
+<body>
+
+    <!-- Card cadastro: -->
+    <div class="mt-5">
+
+        <div class="text-center">
+            <h1 style="color: rgb(148, 84, 180);">Cadastre-se</h1>
+        </div>
+
+        <div class="card mb-5" style="width: 18rem; margin: 0 auto; float: none;">
+            <div class="card-body" style="background-color: rgb(227, 229, 231);">
+                <form>
+                    <div class="form-group">
+                        <label for="Nome" class="lead">Nome Completo:</label><br>
+                        <input type="text" name="Nome" id="Nome" class="form-control" aria-describedby="textHelp" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="E-mail" class="lead">E-mail:</label><br>
+                        <input type="email" name="E-mail" id="E-mail" class="form-control" aria-describedby="emailHelp" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="Senha1" class="lead">Senha:</label><br>
+                        <input type="password" id="Senha1" name="Senha" class="form-control" required>
+                    </div>
+
+                    <div class="text-center">
+                        <button type="submit" class="btn text-light w-75" style="background-color: rgb(148, 84, 180); font-size: 25px; border-radius: 10px;">Cadastrar</button>
+                        <p class="lead text-muted mt-3 mb-0" style="font-size: 14px;">Já tem cadastro?</p>
+                        <a class="card-link mt-2" style="color: rgb(148, 84, 180);" href="#"><h2 class="lead">Login</h2></a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Links JavaScript do Bootstrap: -->
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+</body>
+</html>
